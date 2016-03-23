@@ -1,0 +1,5 @@
+values = raw_input('Enter number')
+list = values.split()
+print list
+t = tuple(list)
+print t
