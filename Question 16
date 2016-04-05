@@ -1,0 +1,6 @@
+values = [x for x in raw_input().split(',')]
+odd = []
+for i in values:
+    if int(i) % 2 != 0:
+        odd.append(str(int(i)**2))
+print ','.join(odd)
