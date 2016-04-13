@@ -1,0 +1,14 @@
+def count_dig_wor(sentance):
+    dig = 0
+    wor = 0
+    for x in sentance:
+        if x.isdigit():
+            dig += 1
+        elif x.isalpha():
+            wor += 1
+        else:
+            pass
+    print 'Digits:', dig
+    print 'Words:', wor
+
+count_dig_wor('ghfdgh5645')
