@@ -1,0 +1,11 @@
+net_amount = 0
+while True:
+    a = raw_input()
+    if not a:
+        break
+    s = a.split()
+    if s[0] == 'D':
+        net_amount = net_amount + int(s[1])
+    elif s[0] == 'W':
+        net_amount = net_amount - int(s[1])
+print net_amount
