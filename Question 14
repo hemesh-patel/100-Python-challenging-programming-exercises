@@ -1,0 +1,14 @@
+def count_dig_wor(sentance):
+    up = 0
+    low = 0
+    for x in sentance:
+        if x.isupper():
+            up += 1
+        elif x.islower():
+            low += 1
+        else:
+            pass
+    print 'Uppercase letters:', up
+    print 'Lowercase letters:', low
+
+count_dig_wor('dfjvdkjKSJNDKLFH')
