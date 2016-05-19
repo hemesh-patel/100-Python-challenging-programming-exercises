@@ -1,7 +1,6 @@
-s = raw_input()
-binary = [number for number in s.split(',')]
-div_5 = []
-for i in binary:
+number = input('>').split(',')
+lst = []
+for i in number:
     if int(i) % 5 == 0:
-        div_5.append(i)
-print ','.join(div_5)
+        lst.append(str(i))
+print(', '.join(lst))
