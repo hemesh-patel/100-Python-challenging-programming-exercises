@@ -1,5 +1,3 @@
-values = raw_input('Enter number')
-list = values.split()
-print list
-t = tuple(list)
-print t
+number = input('Enter numbers:\n').split(',')
+print(number)
+print(tuple(number))
