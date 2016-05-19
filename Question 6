@@ -1,0 +1,9 @@
+import math
+
+c = 50
+h = 30
+d = input('>').split(',')
+q = []
+for i in d:
+    q.append(str(int(math.sqrt((2 * c * int(i))/h))))
+print(','.join(q))
