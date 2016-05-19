@@ -1,5 +1,2 @@
-s = raw_input()
-words = [word for word in s.split()]
-words.append(s)
-word = words[:-1]
-print ' '.join(sorted(list(set(word))))
+word = input('>').split(' ')
+print(' '.join(sorted(list(set(word)))))
