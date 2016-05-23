@@ -1,6 +1,5 @@
-number = []
-for i in range(1000, 3000):
-    s = str(i)
-    if int(s[0]) % 2 == 0 and int(s[1]) % 2 == 0 and int(s[2]) % 2 == 0 and int(s[3]) % 2 == 0:
-        number.append(s)
-print ','.join(number)
+lst = []
+for i in range(1000, 3001):
+    if int(str(i)[0]) % 2 == 0 and int(str(i)[1]) % 2 == 0 and int(str(i)[2]) % 2 == 0 and int(str(i)[3]) % 2 == 0:
+            lst.append(str(i))
+print(','.join(lst))
