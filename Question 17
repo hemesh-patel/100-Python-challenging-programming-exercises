@@ -9,3 +9,17 @@ while True:
     elif s[0] == 'W':
         net_amount = net_amount - int(s[1])
 print net_amount
+
+
+#Alternative:
+
+ac = 0
+while True:
+    x = input('>').split(' ')
+    if x[0] == 'D':
+        ac += int(x[1])
+    elif x[0] == 'W':
+        ac -= int(x[1])
+    elif x[0] == 'done':
+        break
+print(ac)
