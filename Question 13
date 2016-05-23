@@ -12,3 +12,17 @@ def count_dig_wor(sentance):
     print 'Words:', wor
 
 count_dig_wor('ghfdgh5645')
+
+
+#Alternative:
+
+x = input('>: ')
+Letters = 0
+Digits = 0
+for i in x:
+    if i.isdigit():
+        Digits += 1
+    elif i.isalpha():
+        Letters += 1
+print('LETTERS', Letters)
+print('DIGITS', Digits)
