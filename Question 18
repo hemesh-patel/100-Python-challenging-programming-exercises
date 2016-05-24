@@ -1,0 +1,9 @@
+import re
+
+password = []
+x = input('>').split(',')
+for i in x:
+    if 12 > len(i) > 6:
+        if re.search('[a-z]', i) and re.search('[A-Z]', i) and re.search('[0-9]', i) and re.search('[$#@]', i):
+            password.append(i)
+print(','.join(password))
