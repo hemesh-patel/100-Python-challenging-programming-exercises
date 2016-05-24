@@ -1,0 +1,23 @@
+import math
+x = 0
+y = 0
+while True:
+    move = input('> ')
+    if move == 'done':
+        break
+    try:
+        move = move.split(' ')
+        num = int(move[1])
+        if move[0] == 'DOWN':
+            y -= num
+        elif move[0] == 'UP':
+            y += num
+        elif move[0] == 'RIGHT':
+            x += num
+        elif move[0] == 'LEFT':
+            x -= num
+        else:
+            print('error')
+    except:
+        print('error')
+print(math.sqrt((x**2) + (y**2)))
