@@ -1,8 +1,8 @@
-lst = [x for x in raw_input().split()]
-word = {}
-for i in lst:
-    word[i] = word.get(i, 0) +1
-words = word.keys()
-words.sort()
-for w in words:
-    print '%s:%d' % (w, word[w])
+import operator
+words = input('>').split(' ')
+dic = {}
+for word in words:
+   dic[word] = dic.get(word, 0) + 1
+y = sorted(dic.items(), key=operator.itemgetter(0))
+for i in y:
+    print(i[0], ':', i[1])
