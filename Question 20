@@ -1,0 +1,4 @@
+def div_7(n):
+    x = [i for i in range(0, int(n) + 1) if i % 7 == 0]
+    print(x)
+div_7('70')
