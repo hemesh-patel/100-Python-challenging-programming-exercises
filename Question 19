@@ -1,0 +1,6 @@
+info = []
+while True:
+    raw = input('>')
+    if len(raw) < 1: break
+    else: data = info.append(tuple(raw.split(',')))
+print(sorted(info))
