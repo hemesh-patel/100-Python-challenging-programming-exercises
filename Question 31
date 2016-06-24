@@ -1,0 +1,14 @@
+def print_large(s1, s2):
+    l1 = len(s1)
+    l2 = len(s2)
+    if len(s1) > len(s2):
+        print(s1)
+    elif len(s1) < len(s2):
+        print(s2)
+    elif len(s1) == len(s2):
+        print(s1)
+        print(s2)
+    else:
+        print('error')
+        
+print_large("one","three")
