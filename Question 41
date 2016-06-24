@@ -1,0 +1,8 @@
+def l():
+    d = {}
+    for i in range(1, 21):
+        d[i] = i**2
+    return tuple(d.items())
+
+
+print(l())
