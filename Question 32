@@ -1,0 +1,9 @@
+def odd_even(x):
+    try:
+        if int(x) % 2 == 0:
+            print('It is an even number')
+        else:
+            print('It is an odd number')
+    except:
+        print('You must input integers!')
+odd_even(25)
