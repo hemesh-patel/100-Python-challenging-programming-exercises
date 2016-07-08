@@ -1,0 +1,13 @@
+'''
+Question 55:
+
+Write a function to compute 5/0 and use try/except to catch the exceptions.
+'''
+
+def compute():
+    try:
+        print(5/0)
+    except:
+        print('caught exception')
+
+compute()
